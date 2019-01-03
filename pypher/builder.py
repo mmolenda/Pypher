@@ -596,7 +596,7 @@ class Label(Statement):
 
     def _set_operator(self, operator):
         if operator not in self._ALLOWED_OPERATORS:
-            raise 
+            raise PypherArgumentException
 
         self._operator = operator
 
